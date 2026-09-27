@@ -21,8 +21,8 @@ def is_connected(mac_address: str) -> bool:
         )
         print(f"[{timestamp}] blueutil exit code: {result.returncode}")
         print(f"[{timestamp}] blueutil stdout: {result.stdout}")
-        if result.stderr is not empty:
-          print(f"[{timestamp}] blueutil stderr: {result.stderr}")
+        if result.stderr:
+            print(f"[{timestamp}] blueutil stderr: {result.stderr}")
         return result.stdout.strip() == "1"
     except Exception as e:
         print(f"[{timestamp}] ERROR in is_connected: {e}")
