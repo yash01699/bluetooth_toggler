@@ -1,6 +1,6 @@
 # bluetooth_toggler
 
-I had to keep manually toggling settings in my macbook everytime I connected to my bluetooth mouse, so I wrote a script for it and it automatically toggles my settings for me if my bluetooth mouse is connected and it runs every 15 seconds (but you can customise it however you want).
+I had to keep manually toggling settings in my macbook everytime I connected to my bluetooth mouse, so I wrote a script for it that automatically toggles my settings for me if my bluetooth mouse is connected and disables this settings whenever its not. It runs every 15 seconds using the apple launch agent (but you can customise it however you want).
 
 -----------*****************************-----------
 
